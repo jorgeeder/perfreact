@@ -1,14 +1,14 @@
 import { ProductItem } from "./ProductItem";
 
 interface SearchResultsProps {
-  retults: Array<{
+  results: Array<{
     id: number;
     price: number;
     title: string;
   }>
 }
 
-export function SearchResults({results}) {
+export function SearchResults({results}: SearchResultsProps) {
   return (
     <div>
       {results.map(product => {
